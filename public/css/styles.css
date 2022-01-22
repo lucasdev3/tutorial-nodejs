@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* MAIN */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    background-color: rgb(90, 17, 150);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 100%;
+
+    -webkit-animation: fadeIn 5s ease-in-out;
+    -moz-animation: fadeIn 5s ease-in-out;
+    -o-animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 5s ease-in-out;
+
+}
+
+#container-titulo{
+    margin-bottom: 1rem;
+    font-size: 40px;
+    font-weight: 900;
+    
+    -webkit-animation: loading 2s linear;
+    -moz-animation: loading 2s linear;
+    -o-animation: loading 2s linear;
+    animation: loading 2s linear;
+}
+
+#agradecimentos {
+    margin-top: 5rem;
+    align-items: center;
+
+    -webkit-animation: loading 3s linear;
+    -moz-animation: loading 3s linear;
+    -o-animation: loading 3s linear;
+    animation: loading 3s linear;
+}
+
+div p {
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+#label-links {
+    display: flex;
+    max-width: 100%;
+    width: 600px;
+    position: relative;
+    justify-content: space-around;
+    
+    
+
+    -webkit-animation: loading 5s linear;
+    -moz-animation: loading 5s linear;
+    -o-animation: loading 5s linear;
+    animation: loading 5s linear;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    border: white;
+    border-style: solid;
+    padding: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+    border: white;
+    border-style: solid;
+    padding: 0.5rem;
+    font-weight: bolder;
+}
+
+
+label {
+    font-size: 20px;
+    margin-bottom: 3rem;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.links:hover {
+    background-color: rgb(216, 89, 16);
+}
+
+.links a:hover {
+    background-color: rgb(150, 28, 7);
+    cursor: pointer;
+}
+
+#midias-sociais {
+    font-size: 25px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#container-midias-sociais-icones {
+    align-items: center;
+}
+
+#container-midias-sociais {
+    align-items: center;
+}
+
+#icones {
+    margin-bottom: 3.5rem;
+    display: block;
+    position: relative;
+}
+
+#icones{
+    -webkit-animation: loading 6s linear;
+    -moz-animation: loading 6s linear;
+    -o-animation: loading 6s linear;
+    animation: loading 6s linear;
+}
+
+
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes loading {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+@-o-keyframes loading {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+@-moz-keyframes loading {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes loading {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+
+@media screen and (max-width: 1200px){
+
+    #container-titulo {
+        font-size: 25px;
+    }
+
+    div p {
+        font-size: 16px;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #label-links {
+        max-width: 100%;
+        width: 350px;
+        flex-direction: column;
+    }
+
+    
+}
+
+/* proximo 800*/
